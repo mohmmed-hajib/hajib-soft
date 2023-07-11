@@ -54,7 +54,7 @@
 					</div>
 					
 					<div class="wrap-input100 validate-input" data-validate = "لم تقم بكتابة اسم  المنتج">
-						<input class="input100" type="text" name="name" required>
+						<input class="input100" type="text" name="name" required id="name">
 						<span class="focus-input100"></span>
 						<span class="label-input100">اسم المنتج </span>
 					</div>
@@ -176,7 +176,7 @@
                     // Here, we are setting the content of the <h1> element to the response from the server.
                     document.querySelector("#sub").value = "Submit"
                     // Change the value of the submit button back to "Submit" after the form has been submitted.
-					alert("تم ارسال البيانات ")
+					x = document.getElementById("name").value;alert("تم اضافة المنتج بنجاح ");alert(x)
 					
                     if (confirm("هل ترغب في ادخال بيانات جديدة ؟؟") == true) {
    window.location.reload();
