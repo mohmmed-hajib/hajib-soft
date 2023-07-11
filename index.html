@@ -59,7 +59,7 @@
 						<span class="label-input100">اسم المنتج </span>
 					</div>
 					<div class="wrap-input100 validate-input" data-validate = "لم تقم بكتابة وحدة المنتج">
-						<input class="input100" type="text" name="whda" list="defaultNumbers" required>
+						<input class="input100" type="text" name="whda" list="defaultNumbers" required id="whda">
 						<datalist id="defaultNumbers">
   <option value="حبة">
   <option value="كرتون">
@@ -72,7 +72,7 @@
 						<span class="label-input100">الوحدة </span>
 					</div>
 					<div class="wrap-input100 validate-input" data-validate = "لم تقم بكتابة كمية المنتج">
-						<input class="input100" type="tel" name="kmia" required>
+						<input class="input100" type="tel" name="kmia" required id="kmia">
 						<span class="focus-input100"></span>
 						<span class="label-input100">الكمية </span>
 					</div>
@@ -176,7 +176,10 @@
                     // Here, we are setting the content of the <h1> element to the response from the server.
                     document.querySelector("#sub").value = "Submit"
                     // Change the value of the submit button back to "Submit" after the form has been submitted.
-					x = document.getElementById("name").value;alert("تم اضافة المنتج بنجاح ");alert(x)
+							   n = document.getElementById("kmia").value
+						    x = document.getElementById("name").value
+							w = document.getElementById("whda").value
+						;alert(" تم اضافة المنتج بنجاح"+"\n"+(x)+"\n"+" الكمية: "+"\n"+(n)+(w));
 					
                     if (confirm("هل ترغب في ادخال بيانات جديدة ؟؟") == true) {
    window.location.reload();
