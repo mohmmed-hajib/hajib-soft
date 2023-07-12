@@ -66,7 +66,6 @@
   <option value="علبة">
   <option value="شد">
   <option value="درزن">
-  <option value="اخرى (ساكتبها بالملاحظات )">
 </datalist>
 						<span class="focus-input100"></span>
 						<span class="label-input100">الوحدة </span>
@@ -179,7 +178,7 @@
 							   n = document.getElementById("kmia").value
 						    x = document.getElementById("name").value
 							w = document.getElementById("whda").value
-						;alert(" تم اضافة المنتج بنجاح"+"\n"+(x)+"\n"+" الكمية: "+"\n"+(n)+(w));
+							;alert(" تم اضافة المنتج بنجاح"+"\n"+(x)+"\n"+" الكمية: "+"\n"+(n)+(w)+"\n"+"\n"+document.querySelector("#msg").innerHTML);
 					
                     if (confirm("هل ترغب في ادخال بيانات جديدة ؟؟") == true) {
    window.location.reload();
