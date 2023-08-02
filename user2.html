@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>حاجب سوفت برنامج الجرد </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body style="background-color: #666666;">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+				
+					 <h1 id="msg"></h1>
+				<span class="login100-form-title p-b-43">
+					
+			<img src="https://cdn.salla.sa/8VG3LrofZwOICRflslgrU6Nmrf6kIIjWV19JzS4h.png" width=200 height=200  >
+					
+					</span>
+							<span class="login100-form-title p-b-43">
+					
+						بسم الله الرحمن الرحيم 
+					
+					</span>
+					
+					
+									<div class="wrap-input100 validate-input" data-validate = "لم تقم بكتابة باركود المنتج ">
+						<input class="input100" type="text" name="barcode" required>
+						<span class="focus-input100"></span>
+						<span class="label-input100">الباركود</span>
+					</div>
+					
+					<div class="wrap-input100 validate-input" data-validate = "لم تقم بكتابة اسم  المنتج">
+						<input class="input100" type="text" name="name" required id="name">
+						<span class="focus-input100"></span>
+						<span class="label-input100">اسم المنتج </span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "لم تقم بكتابة وحدة المنتج">
+						<input class="input100" type="text" name="whda" list="defaultNumbers" required id="whda">
+						<datalist id="defaultNumbers">
+  <option value="حبة">
+  <option value="كرتون">
+  <option value="علبة">
+  <option value="شد">
+  <option value="درزن">
+</datalist>
+						<span class="focus-input100"></span>
+						<span class="label-input100">الوحدة </span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "لم تقم بكتابة كمية المنتج">
+						<input class="input100" type="tel" name="kmia" required id="kmia">
+						<span class="focus-input100"></span>
+						<span class="label-input100">الكمية </span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "لم تقم بكتابة الكمية التالفة">
+						<input class="input100" type="tel" name="talf" value="0">
+						<span class="focus-input100"></span>
+						<span class="label-input100">الكمية التالفة </span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "لم تقم بكتابة سعر الشراء">
+						<input class="input100" type="text" name="shira">
+						<span class="focus-input100"></span>
+						<span class="label-input100">سعر الشراء </span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "لم تقم بكتابة سعر البيع ">
+						<input class="input100" type="text" name="bia">
+						<span class="focus-input100"></span>
+						<span class="label-input100">سعر البيع </span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "شكلة ماعندك ملاحظات ع المنتج ">
+						<input class="input100" type="text" name="note" >
+						<span class="focus-input100"></span>
+						<span class="focus-input100"></span>
+						<span class="label-input100">ملاحظة </span>
+					</div>
+					
+					<div class="wrap-input100 validate-input" data-validate = " ">
+						<input class="input100" type="hidden" name="user" value="مستخدم 2 ">
+						<span class="focus-input100"></span>
+						<span class="label-input100">  </span>
+					</div>
+
+					
+			
+			
+					<div  type="submit" id="sub" class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							ارسال
+						</button>
+					
+						<button type="button" onClick="window.location.reload()">
+   ادخال جديد
+</button>
+						
+					</div>
+
+					<div class="text-center p-t-90">
+						<a class="txt1" href="#">
+							جميع الحقوق محفوظة - حاجب سوفت
+						</a>
+					</div>
+				
+				</form>
+
+				<div class="login100-more" style="background-image: url('images/bg-01.jpg');">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	
+	
+	
+	
+   <script>
+        let form = document.querySelector("form");
+        // The document.querySelector() method returns the first element that matches a specified CSS selector.
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // The preventDefault() method stops the form from submitting and prevents the page from refreshing.
+            document.querySelector("#sub").value = "Submiting..";
+            // Change the value of the submit button to "Submitting..." while the form is being submitted.
+            let data = new FormData(form);
+            // The FormData() method creates a new FormData object that contains the values of all the form fields.
+            fetch('https://script.google.com/macros/s/AKfycbw2b1B_W6mM6-ld3yUhrA1EOJcIYDU0sd8vk9NEaUE0KXeUKEA4m76VLZcV0I5NMXtn/exec', {
+                    method: "POST",
+                    body: data
+                })
+                // The fetch() method is used to make a request to the server and retrieve data.
+                // This is an example API endpoint. Replace it with the actual URL for the API endpoint you want to use.
+                .then(res => res.text())
+                // The .then() method is used to handle the response from the server.
+                // The response is converted to text using the res.text() method.
+                .then(data => {
+                    document.querySelector("#msg").innerHTML = data;
+                    // The innerHTML property sets or returns the HTML content of an element.
+                    // Here, we are setting the content of the <h1> element to the response from the server.
+                    document.querySelector("#sub").value = "Submit"
+                    // Change the value of the submit button back to "Submit" after the form has been submitted.
+							   n = document.getElementById("kmia").value
+						    x = document.getElementById("name").value
+							w = document.getElementById("whda").value
+							;alert(" تم اضافة المنتج بنجاح"+"\n"+(x)+"\n"+" الكمية: "+"\n"+(n)+(w)+"\n"+"\n"+document.querySelector("#msg").innerHTML);
+					
+                    if (confirm("هل ترغب في ادخال بيانات جديدة ؟؟") == true) {
+   window.location.reload();
+  } else {
+   ;
+  }
+				document.querySelector("num_inv").value = "Submit"
+                
+                });
+				
+        })
+	
+    </script>
+
+</body>
+</html>
